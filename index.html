@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>精益管网监测系统PCweb</title>
+  <link rel="stylesheet" href="./layui/css/layui.css">
+  <link rel="stylesheet" href="css/font.css">
+
+  <script src="js/jquery.min.js"></script>
+  <script src="lib/layui/layui.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/xadmin.js"></script>
+  <style>
+
+  </style>
+
+</head>
+<body>
+
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo">
+      <img style='width: 25%;display:inline-block;' src="logo.png" alt="load failed">
+      <p style='display:inline-block;color:red'>ZDJY</p>
+    </div>
+
+
+    <!-- 头部区域（可配合layui 已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left">
+      <li class="layui-nav-item"><a href="javascript:document.getElementById('DDD').setAttribute('src','set.html')" href="">参数设置</a></li>
+      <li class="layui-nav-item"><a href="">信息查看</a></li>
+      <li class="layui-nav-item"><a href="javascript:document.getElementById('DDD').setAttribute('src','guide.html')">使用帮助</a></li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">更多</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">关于浙达精益</a></dd>
+          <dd><a href="">跳转</a></dd>
+          <dd><a href="">统计</a></dd>
+        </dl>
+      </li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item">
+        <a href="javascript:;">
+          <img src="3.png" class="layui-nav-img">
+          majunwang
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="">信息设置</a></dd>
+          <dd><a href="">切换</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item"><a href="">Sign out</a></li>
+    </ul>
+  </div>
+ 
+
+
+
+  <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+
+      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+
+        <li class="layui-nav-item layui-nav-itemed">         
+          <a class="" href="javascript:;"><i class="iconfont">&#xe6eb;</i><cite class='leftfont' style='margin-left: 10px;'>主页</cite></a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:document.getElementById('DDD').setAttribute('src','workmessage.html')">工作信息</a></dd>
+            <dd><a href="javascript:document.getElementById('DDD').setAttribute('src','echarts3.html')">控制台</a></dd>
+          </dl>
+        </li>
+
+
+        <li class="layui-nav-item">
+          <a class="" href="javascript:;"><i class="iconfont">&#xe6e4;</i><cite class='leftfont' style='margin-left: 10px;'>监测信息</cite></a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:document.getElementById('DDD').setAttribute('src','echarts1.html')">波形信息</a></dd>
+            <dd><a href="javascript:document.getElementById('DDD').setAttribute('src','echarts2.html')">统计信息</a></dd>
+          </dl>
+        </li>
+
+
+        <li class="layui-nav-item">  
+          <a class="" href="javascript:document.getElementById('DDD').setAttribute('src','set.html')"><i class="iconfont">&#xe69e;</i><cite class='leftfont' style='margin-left: 10px;'>常规设置</cite></a>
+        
+
+        <li class="layui-nav-item">
+          <a class="" href="javascript:document.getElementById('DDD').setAttribute('src','peoplemanage.html')"><i class="iconfont">&#xe70b;</i><cite class='leftfont' style='margin-left: 10px;'>用户管理</cite></a>
+        
+
+        <li class="layui-nav-item layui-nav-itemed">
+          <a class="" href="javascript:;"><i class="iconfont">&#xe726;</i><cite class='leftfont' style='margin-left: 10px;'>其他</cite></a>
+          <dl class="layui-nav-child">
+            <dd ><a href="javascript:document.getElementById('DDD').setAttribute('src','https://www.layui.com/layuiadmin/std/dist/views/user/reg.html')">注册</a></dd>
+            <dd><a href="javascript:document.getElementById('DDD').setAttribute('src','https://www.layui.com/layuiadmin/std/dist/views/user/reg.html')">登录</a></dd>
+          </dl>
+        </li>
+
+        <li class="layui-nav-item">
+          <a class="" href="javascript:document.getElementById('DDD').setAttribute('src','https://echarts.apache.org/examples/zh/index.html')"><i class="iconfont">&#xe70b;</i><cite class='leftfont' style='margin-left: 10px;'>支持图例一览</cite></a>
+        
+
+
+
+        </ul>
+    </div>
+  </div>
+  
+
+    <!-- 内容主体区域 -->
+    <div class="layui-body">
+      <iframe id='DDD' src='workmessage.html' frameborder="0" scrolling="yes" style='width:100%;height:100%;overflow:hidden;'></iframe>  
+    </div>
+
+    <!-- 底部固定区域 -->  
+  <div class="layui-footer" style='background-color:rgb(224, 224, 223);'>
+    <p style='text-align:center'>contact us:    电话：0571-85022037 传真：0571-85128737 邮箱：service@jingyitech.com</p>
+  </div>
+</div>
+ 
+<script src="./layui/layui.js"></script>
+<script>
+//JavaScript代码区域
+layui.use('element', function(){
+  var element = layui.element;
+  
+});
+</script>
+</body>
+</html>
